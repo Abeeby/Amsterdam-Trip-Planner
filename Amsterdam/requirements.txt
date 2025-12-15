@@ -1,0 +1,26 @@
+# ============================================
+# Amsterdam Trip Planner - Dependances Python
+# ============================================
+# 
+# Ce projet utilise uniquement des bibliotheques
+# incluses dans la bibliotheque standard de Python.
+#
+# Aucune installation supplementaire n'est requise !
+#
+# Bibliotheques utilisees (standard library):
+# - tkinter : Interface graphique
+# - tkinter.ttk : Widgets modernes
+# - json : Sauvegarde/chargement des donnees
+# - datetime : Gestion des dates
+# - os : Operations sur les fichiers
+#
+# Pour executer l'application:
+# python main.py
+#
+# ============================================
+# Si vous souhaitez ajouter des fonctionnalites
+# supplementaires, vous pouvez installer:
+# ============================================
+# pillow>=10.0.0  # Pour afficher des images (optionnel)
+# tkcalendar>=1.6.1  # Pour un widget calendrier (optionnel)
+
