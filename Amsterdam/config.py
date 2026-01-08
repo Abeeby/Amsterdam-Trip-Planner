@@ -25,11 +25,11 @@ DATE_RETOUR = "2025-09-20"
 # ============================================
 
 # Titre de l'application
-APP_TITLE = f"🇳🇱 Voyage d'étude - {DESTINATION} 2025"
+APP_TITLE = "Voyage d'etude - Amsterdam 2025"
 
 # Dimensions de la fenetre principale (largeur x hauteur)
 WINDOW_WIDTH = 1000
-WINDOW_HEIGHT = 700
+WINDOW_HEIGHT = 850
 
 # Dimensions minimales de la fenetre
 MIN_WIDTH = 800
@@ -54,7 +54,7 @@ DATA_FILE = os.path.join(DATA_DIR, "voyage_data.json")
 
 # Couleurs inspirees du drapeau neerlandais et d'Amsterdam
 COLORS = {
-    "primary": "#FF6B35",      # Orange (couleur nationale)
+    "primary": "#023047",      # blue (couleur nationale)
     "secondary": "#1E3A5F",    # Bleu fonce
     "accent": "#F7C948",       # Jaune/Or
     "background": "#F5F5F5",   # Gris clair
@@ -86,9 +86,9 @@ FONTS = {
 
 BUDGET_CATEGORIES = [
     "Transport",
-    "Hébergement",
+    "Hebergement",
     "Nourriture",
-    "Activités",
+    "Activites",
     "Shopping",
     "Autre"
 ]
@@ -99,10 +99,10 @@ BUDGET_CATEGORIES = [
 
 CHECKLIST_CATEGORIES = [
     "Documents",
-    "Vêtements",
-    "Électronique",
-    "Hygiène",
-    "Médicaments",
+    "Vetements",
+    "Electronique",
+    "Hygiene",
+    "Medicaments",
     "Autre"
 ]
 
@@ -115,10 +115,10 @@ TRANSPORT_TYPES = [
     "Train",
     "Bus",
     "Voiture",
-    "Métro",
+    "Metro",
     "Tramway",
-    "Vélo",
-    "À pied"
+    "Velo",
+    "A pied"
 ]
 
 # ============================================
@@ -130,7 +130,7 @@ PARTICIPANT_ROLES = [
     "Accompagnateur",
     "Participant",
     "Responsable budget",
-    "Responsable activités"
+    "Responsable activites"
 ]
 
 # ============================================
@@ -142,7 +142,7 @@ DEFAULT_DATA = {
         "destination": DESTINATION,
         "date_depart": DATE_DEPART,
         "date_retour": DATE_RETOUR,
-        "description": "Voyage d'étude à Amsterdam pour découvrir la culture néerlandaise"
+        "description": "Voyage d'etude a Amsterdam pour decouvrir la culture neerlandaise"
     },
     "activites": [
         {
@@ -153,7 +153,7 @@ DEFAULT_DATA = {
             "horaire": "10:00",
             "duree": "3h",
             "prix": 22.50,
-            "description": "Musée national avec les œuvres de Rembrandt et Vermeer"
+            "description": "Musee national avec les oeuvres de Rembrandt et Vermeer"
         },
         {
             "id": 2,
@@ -168,12 +168,12 @@ DEFAULT_DATA = {
         {
             "id": 3,
             "date": "2025-09-17",
-            "nom": "Croisière sur les canaux",
+            "nom": "Croisiere sur les canaux",
             "lieu": "Damrak",
             "horaire": "14:00",
             "duree": "1h30",
             "prix": 18.00,
-            "description": "Découverte de la ville depuis les canaux"
+            "description": "Decouverte de la ville depuis les canaux"
         }
     ],
     "budget": {
@@ -205,7 +205,7 @@ DEFAULT_DATA = {
         "type_chambre": "Double",
         "petit_dejeuner": True,
         "wifi": True,
-        "notes": "Situé au centre-ville, proche de la gare centrale"
+        "notes": "Situe au centre-ville, proche de la gare centrale"
     },
     "transport": {
         "aller": {
@@ -218,7 +218,7 @@ DEFAULT_DATA = {
             "arrivee_lieu": "Amsterdam Centraal",
             "arrivee_heure": "10:44",
             "place": "Voiture 12",
-            "notes": "Rendez-vous à la gare à 06:45"
+            "notes": "Rendez-vous a la gare a 06:45"
         },
         "retour": {
             "type": "Train",
@@ -230,11 +230,11 @@ DEFAULT_DATA = {
             "arrivee_lieu": "Paris Gare du Nord",
             "arrivee_heure": "20:41",
             "place": "Voiture 8",
-            "notes": "Prévoir d'être à la gare à 16:30"
+            "notes": "Prevoir d'etre a la gare a 16:30"
         },
         "sur_place": [
             {
-                "type": "Métro",
+                "type": "Metro",
                 "description": "Abonnement GVB 5 jours",
                 "prix": 40.50
             }
@@ -261,22 +261,22 @@ DEFAULT_DATA = {
             "role": "Responsable budget",
             "date_naissance": "2001-03-22",
             "allergies": "Arachides",
-            "notes": "Gère les dépenses du groupe"
+            "notes": "Gere les depenses du groupe"
         }
     ],
     "checklist": [
-        {"id": 1, "item": "Passeport/Carte d'identité", "categorie": "Documents", "checked": False},
-        {"id": 2, "item": "Carte européenne d'assurance maladie", "categorie": "Documents", "checked": False},
+        {"id": 1, "item": "Passeport/Carte d'identite", "categorie": "Documents", "checked": False},
+        {"id": 2, "item": "Carte europeenne d'assurance maladie", "categorie": "Documents", "checked": False},
         {"id": 3, "item": "Billets de train", "categorie": "Documents", "checked": False},
-        {"id": 4, "item": "Confirmation hôtel", "categorie": "Documents", "checked": False},
-        {"id": 5, "item": "Vêtements pour 5 jours", "categorie": "Vêtements", "checked": False},
-        {"id": 6, "item": "Veste imperméable", "categorie": "Vêtements", "checked": False},
-        {"id": 7, "item": "Chaussures confortables", "categorie": "Vêtements", "checked": False},
-        {"id": 8, "item": "Chargeur téléphone", "categorie": "Électronique", "checked": False},
-        {"id": 9, "item": "Appareil photo", "categorie": "Électronique", "checked": False},
-        {"id": 10, "item": "Batterie externe", "categorie": "Électronique", "checked": False},
-        {"id": 11, "item": "Brosse à dents", "categorie": "Hygiène", "checked": False},
-        {"id": 12, "item": "Médicaments personnels", "categorie": "Médicaments", "checked": False}
+        {"id": 4, "item": "Confirmation hotel", "categorie": "Documents", "checked": False},
+        {"id": 5, "item": "Vetements pour 5 jours", "categorie": "Vetements", "checked": False},
+        {"id": 6, "item": "Veste impermeable", "categorie": "Vetements", "checked": False},
+        {"id": 7, "item": "Chaussures confortables", "categorie": "Vetements", "checked": False},
+        {"id": 8, "item": "Chargeur telephone", "categorie": "Electronique", "checked": False},
+        {"id": 9, "item": "Appareil photo", "categorie": "Electronique", "checked": False},
+        {"id": 10, "item": "Batterie externe", "categorie": "Electronique", "checked": False},
+        {"id": 11, "item": "Brosse a dents", "categorie": "Hygiene", "checked": False},
+        {"id": 12, "item": "Medicaments personnels", "categorie": "Medicaments", "checked": False}
     ]
 }
 
@@ -284,12 +284,12 @@ DEFAULT_DATA = {
 # FONCTIONS UTILITAIRES
 # ============================================
 
-def get_days_until_departure() -> int:
+def get_days_until_departure():
     """
     Calcule le nombre de jours restants avant le depart.
-    
+
     Returns:
-        int: Nombre de jours avant le depart (negatif si deja passe)
+        Nombre de jours avant le depart (negatif si deja passe)
     """
     departure = datetime.strptime(DATE_DEPART, "%Y-%m-%d")
     today = datetime.now()
@@ -297,18 +297,17 @@ def get_days_until_departure() -> int:
     return delta.days
 
 
-def format_date(date_str: str, format_input: str = "%Y-%m-%d", 
-                format_output: str = "%d/%m/%Y") -> str:
+def format_date(date_str, format_input="%Y-%m-%d", format_output="%d/%m/%Y"):
     """
     Convertit une date d'un format a un autre.
-    
+
     Args:
         date_str: La date en chaine de caracteres
         format_input: Le format d'entree (par defaut: AAAA-MM-JJ)
         format_output: Le format de sortie (par defaut: JJ/MM/AAAA)
-    
+
     Returns:
-        str: La date formatee
+        La date formatee
     """
     try:
         date_obj = datetime.strptime(date_str, format_input)
@@ -317,18 +316,17 @@ def format_date(date_str: str, format_input: str = "%Y-%m-%d",
         return date_str
 
 
-def format_currency(amount: float, currency: str = "EUR") -> str:
+def format_currency(amount, currency="EUR"):
     """
     Formate un montant en devise.
-    
+
     Args:
         amount: Le montant a formater
         currency: La devise (par defaut: EUR)
-    
+
     Returns:
-        str: Le montant formate (ex: "25,50 €")
+        Le montant formate (ex: "25,50 EUR")
     """
     if currency == "EUR":
-        return f"{amount:,.2f} €".replace(",", " ").replace(".", ",")
+        return f"{amount:,.2f} EUR".replace(",", " ").replace(".", ",")
     return f"{amount:,.2f} {currency}"
-
