@@ -214,7 +214,9 @@ Ce projet est développé dans le cadre d'un exercice pédagogique.
 
 Projet réalisé pour le voyage d'étude à Amsterdam 2025.
 
+AMIN TORRISI ET KODJO ATTIVON
+
 ---
 
-**Bon voyage à Amsterdam ! 🌷🚲**
+
 
