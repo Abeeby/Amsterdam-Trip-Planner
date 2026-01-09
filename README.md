@@ -110,4 +110,4 @@ Projet realise dans le cadre du module I319.
 
 ## Auteur
 
-Projet etudiant - Module I319
+Projet etudiant Amin Torrisi et Kodjo Attivon - Module I319
